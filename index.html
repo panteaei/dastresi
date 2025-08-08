@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>فروشگاه اینترنتی دسترسی</title>
+    <link rel="stylesheet" crossorigin href="/dastresi/assets/index-C66MLlNT.css">
+  </head>
+  <body class="font-estedadRegular">
+    <!-- icons  -->
+    <!-- 1  -->
+    <svg style="display: none">
+      <symbol id="shoppingCart" viewBox="0 0 24 24">
+        <path
+          stroke="currentColor"
+          stroke-width="1.5"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
+        />
+      </symbol>
+    </svg>
+    <!-- 2 -->
+    <svg style="display: none">
+      <symbol id="miniDownArrow" viewBox="0 0 20 20">
+        <path
+          fill-rule="evenodd"
+          d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z"
+          clip-rule="evenodd"
+        />
+      </symbol>
+    </svg>
+
+    <!-- header -->
+    <header class="w-full bg-amber-500 flex justify-center items-center">
+      <!-- wrapper for header  -->
+      <div
+        class="wrapper max-w-[1706px] w-full bg-white flex flex-col items-center"
+      >
+        <!-- wrapper for fixed menu  -->
+        <div
+          class="bg-white w-full h-[148px] pt-[26px] px-2 flex justify-center fixed top-0 left-0 right-0 shadow"
+        >
+          <!-- fixed menu  -->
+          <div class="max-w-[1272px] w-full h-full">
+            <!-- fixed menu - section 1  -->
+            <section class="w-full bg-white flex justify-between items-center">
+              <!-- right flex box  -->
+              <div class="flex items-center justify-start gap-[34px] ml-[70px]">
+                <a
+                  href="./index.html"
+                  class="cursor-pointer w-[97px] inline-block shrink-0"
+                >
+                  <img
+                    class="w-full"
+                    src="/dastresi/assets/logo-CD0j4bhY.png"
+                    alt="logo"
+                  />
+                </a>
+                <form
+                  name="searching"
+                  action="#"
+                  method="get"
+                  class="flex gap-2 items-center w-[372px] h-[40px] rounded-[8px] px-3 py-1 bg-[#F7F8FA] transition-colors ease-in shadow hover:bg-white"
+                >
+                  <img
+                    class="w-6 h-6"
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAAAsTAAALEwEAmpwYAAADC0lEQVR4nO1YzUtUURS/FUUf9rGvRRBU26KltSn6WGkpQgtBxAgiERfVLAadIJkHM8W0EUfLNoLTXTj3dy4OuBIC8/8YJTNIqIWjFt44zCPG2xt6b941BvIHF4bH/M77zTn3fI0Qe9jDTkgpDyilrgF4SUSLRLRKRFv+WfWfZbXWV/m74l9BSnmEiBIAvhCRCXlWATxl7q6KA9AFYDmCMGOdsta607kwY8w+ACkA2zHEGT6+DW94eHi/E3FsiIje13nZVyJ6C6BNKXVhbm7uGB/+TETtACYBrNXhFpyIBJAOeME6gBelUunE3/hSypNENMKcADsjccV1BfzyJSK6HNWWUuqKfX/9cHc0JI4zLsDgktb6dEMGhRClUulMQJKV5+fnD0c2xqXEDmsjnqvjyYpl+4mIAi6sdp3jOyccAX/e68+Rijl3CDtbwyREWHDiBGR3a2gDAF5Z5DfCMYjoneWETBTyokVucy1Qa33XcsJCaLJ9/2ZnZ8+7FqiqxXzHPQxNJqLNWrKUssW1QCllixWljaYWSETrTRXimZmZc5bAT1EEfrTI7a4FElGHFeIPUchZizy5CwLzlhNyock8ptuFmourK3HFYvEUgG+WwJuhDXDb8fcKd6NRDQA8t0tMPp8/KKKAdwjLixVu9CImlFKX7CpBRMlGl6OyJXKZRybRLNBad9p7CIt04Uln8Md1e6qu8MgUJnGUUsd5VANgh9V4nmf6+vqexRLIiw0vOHUWnzV/Kmknoot+dzhaLBbPArjnl5LvQdxcLmd6e3vN4OCgSaVS8UWyJ12tnel0+kdPT48ZGBgwQ0NDJpvNbk9MTDwWjqp/OYa4ZfZ2d3f3rf7+/koymTSZTMaMj4+bQqHAP/5RbJG84PAOwbUrgrAVLiW1Q0cikbjted7G2NiYmZ6e/u1dInooXMAPeytPwkS04Ave9BNohXsrgNfcIaSUh4JsjI6O3pmamtqwr4DW+oFoFlA1wbYsr/8EcF80C1DN+FqR60qpG6KZQNUE3GpKcdZfLdd/P9jD/4Rftb8IK2/KEzMAAAAASUVORK5CYII="
+                    alt="search button"
+                  />
+                  <input
+                    class="w-full h-[20px] pb-1 placeholder:font-estedadRegular placeholder:text-base focus:outline-0 text-gray-700"
+                    type="search"
+                    placeholder="جستجو محصولات"
+                  />
+                </form>
+                <ul
+                  class="firstMenu flex lg:shrink-0 gap-[34px] [&>*]:text-gray-500 xl:[&>*]:text-[13px] [&>*]:text-xs [&>*]:font-estedadRegular [&>*]:hover:text-[#002C84] [&>*]:transition-colors [&>*]:ease-in"
+                >
+                  <li><a href="#">باشگاه مشتریان</a></li>
+                  <li><a href="#">بلاگ </a></li>
+                  <li><a href="#">ارتباط ما </a></li>
+                  <li><a href="#">درباره ما </a></li>
+                </ul>
+              </div>
+              <!-- left flex box  -->
+              <div class="flex items-center gap-4">
+                <a
+                  href="#"
+                  class="group w-11 h-11 flex justify-center items-center bg-[#F7F8FA] rounded-[11px] shadow"
+                >
+                  <svg
+                    class="icon text-[#FE5F55] fill-[#FE5F55] group-hover:text-[#0A295A] group-hover:fill-[#0A295A] transition-colors ease-in"
+                    width="24"
+                    height="24"
+                  >
+                    <use href="#shoppingCart"></use>
+                  </svg>
+                </a>
+                <a
+                  href="#"
+                  class="w-[104px] bg-[#0A5ABD] hover:bg-[#0A295A] transition-colors ease-in text-white text-[14px] py-[10px] rounded-[11px] text-center"
+                  >ورود و ثبت نام</a
+                >
+              </div>
+            </section>
+            <!-- fixed menu - section 2  -->
+            <section class="h-[46px] mt-8 bg-white">
+              <div class="h-full">
+                <ul
+                  class="secondMenu flex justify-between items-center h-full [&>*]:xl:text-sm [&>*]:text-xs [&>*]:text-[#6A6A6A] [&>*]:hover:text-[#FE5F55] [&>*]:h-full [&>*]:border-b-2 [&>*]:border-b-white [&>*]:hover:border-b-[#FE5F55]"
+                >
+                  <li>
+                    <a
+                      class="flex gap-1.5 items-center h-full pb-[30px]"
+                      href="#"
+                      >خانه</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="flex gap-1.5 items-center h-full pb-[30px] group"
+                      href="#"
+                    >
+                      لوازم جانبی مبایل و کامپیوتر
+                      <svg
+                        class="w-4 h-4 fill-[#6A6A6A] group-hover:fill-[#FE5F55]"
+                      >
+                        <use xlink:href="#miniDownArrow" />
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="flex gap-1.5 items-center h-full pb-[30px] group"
+                      href="#"
+                    >
+                      کابل-مدل-رابط
+                      <svg
+                        class="w-4 h-4 fill-[#6A6A6A] group-hover:fill-[#FE5F55]"
+                      >
+                        <use xlink:href="#miniDownArrow" />
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="flex gap-1.5 items-center h-full pb-[30px] group"
+                      href="#"
+                    >
+                      لوازم تولید محتوا
+                      <svg
+                        class="w-4 h-4 fill-[#6A6A6A] group-hover:fill-[#FE5F55]"
+                      >
+                        <use xlink:href="#miniDownArrow" />
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="flex gap-1.5 items-center h-full pb-[30px] group"
+                      href="#"
+                    >
+                      لوازم شبکه
+                      <svg
+                        class="w-4 h-4 fill-[#6A6A6A] group-hover:fill-[#FE5F55]"
+                      >
+                        <use xlink:href="#miniDownArrow" />
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="flex gap-1.5 items-center h-full pb-[30px] group"
+                      href="#"
+                    >
+                      کنسول بازی و لوازم جانبی
+                      <svg
+                        class="w-4 h-4 fill-[#6A6A6A] group-hover:fill-[#FE5F55]"
+                      >
+                        <use xlink:href="#miniDownArrow" />
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="flex gap-1.5 items-center h-full pb-[30px] group"
+                      href="#"
+                    >
+                      لوازم خانگی و شخص
+                      <svg
+                        class="w-4 h-4 fill-[#6A6A6A] group-hover:fill-[#FE5F55]"
+                      >
+                        <use xlink:href="#miniDownArrow" />
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="flex gap-1.5 items-center h-full pb-[30px] group"
+                      href="#"
+                    >
+                      برند ها
+                      <svg
+                        class="w-4 h-4 fill-[#6A6A6A] group-hover:fill-[#FE5F55]"
+                      >
+                        <use xlink:href="#miniDownArrow" />
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </section>
+          </div>
+        </div>
+        <!-- <div class="container bg-amber-400 h-[300px]"></div> -->
+      </div>
+    </header>
+    <!-- grey bg - hidden  -->
+    <div
+      class="greybg fixed left-0 top-0 right-0 bg-gray-500 w-full h-screen hidden"
+    ></div>
+  </body>
+</html>
