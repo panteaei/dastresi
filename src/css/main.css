@@ -1,0 +1,83 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+/* Estedad Font Faces */
+
+@font-face {
+  font-family: 'Estedad-Thin';
+  src: url('../../public/fonts/woff2/Estedad-Thin.woff2') format('woff2');
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Estedad-ExtraLight';
+  src: url('../../public/fonts/woff2/Estedad-ExtraLight.woff2') format('woff2');
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Estedad-Light';
+  src: url('../../public/fonts/woff2/Estedad-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Estedad-Regular';
+  src: url('../../public/fonts/woff2/Estedad-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Estedad-Medium';
+  src: url('../../public/fonts/woff2/Estedad-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Estedad-SemiBold';
+  src: url('../../public/fonts/woff2/Estedad-SemiBold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Estedad-Bold';
+  src: url('../../public/fonts/woff2/Estedad-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Estedad-ExtraBold';
+  src: url('../../public/fonts/woff2/Estedad-ExtraBold.woff2') format('woff2');
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Estedad-Black';
+  src: url('../../public/fonts/woff2/Estedad-Bold.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+}
+
+/* Far.Homa Font Face */
+@font-face {
+  font-family: 'number';
+  src: url('../../public/fonts/woff2/Far.Homa.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@theme {
+--font-estedadThin: "Estedad-Thin" , "number" , sans-serif ;
+--font-estedadBlack: "Estedad-Black", "number", sans-serif;
+--font-estedadBold: "Estedad-Bold", "number", sans-serif;
+--font-estedadExtraBold: "Estedad-ExtraBold", "number", sans-serif;
+--font-estedadExtraLight: "Estedad-ExtraLight", "number", sans-serif;
+--font-estedadLight: "Estedad-Light", "number", sans-serif;
+--font-estedadMedium: "Estedad-Medium", "number", sans-serif;
+--font-estedadRegular: "Estedad-Regular", "number", sans-serif;
+--font-estedadSemiBold: "Estedad-SemiBold", "number" , sans-serif;
+--font-number: "number", sans-serif;
+
+}
+
+
