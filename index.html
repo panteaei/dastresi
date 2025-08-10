@@ -5,12 +5,13 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>فروشگاه اینترنتی دسترسی</title>
-    <link rel="stylesheet" crossorigin href="/dastresi/assets/index-C66MLlNT.css">
+    <link rel="stylesheet" crossorigin href="/dastresi/assets/index-BcApps6Z.css">
   </head>
   <body class="font-estedadRegular">
     <!-- icons  -->
+
     <!-- 1  -->
-    <svg style="display: none">
+    <svg class="hidden">
       <symbol id="shoppingCart" viewBox="0 0 24 24">
         <path
           stroke="currentColor"
@@ -21,13 +22,55 @@
         />
       </symbol>
     </svg>
+
     <!-- 2 -->
-    <svg style="display: none">
+    <svg class="hidden">
       <symbol id="miniDownArrow" viewBox="0 0 20 20">
         <path
           fill-rule="evenodd"
           d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z"
           clip-rule="evenodd"
+        />
+      </symbol>
+    </svg>
+
+    <!-- 3 -->
+    <svg class="hidden">
+      <symbol id="hambIcon" viewBox="0 0 24 24">
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+          stroke-width="1.5"
+          stroke="currentColor"
+          fill="currentColor"
+        />
+      </symbol>
+    </svg>
+
+    <!-- 4 -->
+    <svg class="hidden">
+      <symbol id="searchIcon" viewBox="0 0 24 24">
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z "
+          stroke-width="1.5"
+          stroke="currentColor"
+        />
+      </symbol>
+    </svg>
+
+    <!-- 5 -->
+    <svg class="hidden">
+      <symbol id="person" viewBox="0 0 24 24">
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"
+          stroke-width="1.5"
+          stroke="currentColor"
+          fill="currenColor"
         />
       </symbol>
     </svg>
@@ -40,13 +83,15 @@
       >
         <!-- wrapper for fixed menu  -->
         <div
-          class="bg-white w-full h-[148px] pt-[26px] px-2 flex justify-center fixed top-0 left-0 right-0 shadow"
+          class="lg:bg-white bg-[#EFEFEF] w-full lg:h-[148px] h-[58px] lg:pt-[26px] lg:pb-0 py-4 lg:px-2 px-3.5 flex justify-center fixed top-0 left-0 right-0 shadow"
         >
           <!-- fixed menu  -->
           <div class="max-w-[1272px] w-full h-full">
-            <!-- fixed menu - section 1  -->
-            <section class="w-full bg-white flex justify-between items-center">
-              <!-- right flex box  -->
+            <!-- fixed menu - section 1 - desktop (lg & xl) -->
+            <section
+              class="w-full bg-white hidden lg:flex justify-between items-center"
+            >
+              <!-- right flex box   -->
               <div class="flex items-center justify-start gap-[34px] ml-[70px]">
                 <a
                   href="./index.html"
@@ -85,11 +130,15 @@
                 </ul>
               </div>
               <!-- left flex box  -->
-              <div class="flex items-center gap-4">
+              <div class="hidden lg:flex items-center gap-4">
                 <a
                   href="#"
-                  class="group w-11 h-11 flex justify-center items-center bg-[#F7F8FA] rounded-[11px] shadow"
+                  class="group indicator w-11 h-11 flex justify-center items-center bg-[#F7F8FA] rounded-[11px] shadow"
                 >
+                  <span
+                    class="indicator-item badge bg-[#FE5F55] border-0 h-6 badge-sm rounded-full"
+                    >0</span
+                  >
                   <svg
                     class="icon text-[#FE5F55] fill-[#FE5F55] group-hover:text-[#0A295A] group-hover:fill-[#0A295A] transition-colors ease-in"
                     width="24"
@@ -105,8 +154,8 @@
                 >
               </div>
             </section>
-            <!-- fixed menu - section 2  -->
-            <section class="h-[46px] mt-8 bg-white">
+            <!-- fixed menu - section 2 - desktop (lg & xl)  -->
+            <section class="h-[46px] mt-8 bg-white hidden lg:block">
               <div class="h-full">
                 <ul
                   class="secondMenu flex justify-between items-center h-full [&>*]:xl:text-sm [&>*]:text-xs [&>*]:text-[#6A6A6A] [&>*]:hover:text-[#FE5F55] [&>*]:h-full [&>*]:border-b-2 [&>*]:border-b-white [&>*]:hover:border-b-[#FE5F55]"
@@ -210,6 +259,195 @@
                     </a>
                   </li>
                 </ul>
+              </div>
+            </section>
+            <!-- fixed menu - section 3 - tablet and mobile  -->
+            <section
+              class="lg:hidden w-full h-full flex items-center justify-between"
+            >
+              <!-- right flex box  -->
+              <div class="flex items-center gap-[19px]">
+                <!-- drawer side bar from daisyUi  -->
+                <div class="drawer w-6">
+                  <input
+                    id="my-drawer-4"
+                    type="checkbox"
+                    class="drawer-toggle"
+                  />
+                  <div class="drawer-content">
+                    <!-- Page content here -->
+                    <label for="my-drawer-4" class="drawer-button">
+                      <svg
+                        class="w-6 h-6 text-[#666666] fill-[#666666] cursor-pointer"
+                      >
+                        <use xlink:href="#hambIcon" />
+                      </svg>
+                    </label>
+                  </div>
+                  <div class="drawer-side">
+                    <label
+                      for="my-drawer-4"
+                      aria-label="close sidebar"
+                      class="drawer-overlay"
+                    ></label>
+                    <div
+                      class="menu text-base-content min-h-full w-80 pt-[33px] bg-white shadow"
+                    >
+                      <!-- Sidebar content here -->
+                      <a href="#" class="w-full px-[76px]">
+                        <img
+                          src="/dastresi/assets/logo-CD0j4bhY.png"
+                          alt="logo icon"
+                        />
+                      </a>
+                      <div
+                        class="firstMenu h-[43px] border-y border-y-gray-100 mt-[31px]"
+                      >
+                        <ul
+                          class="w-full h-full [&>*]:text-xs [&>*]:text-gray-700 flex justify-center items-center gap-4 [&>*]:hover:text-black"
+                        >
+                          <li><a href="#">خانه</a></li>
+                          <li><a href="#">درباره ما</a></li>
+                          <li><a href="#">تماس با ما</a></li>
+                          <li><a href="#">بلاگ</a></li>
+                        </ul>
+                      </div>
+                      <div
+                        class="w-full max-h-[calc(100vh-313px)] h-full overflow-y-scroll mt-[34px] mb-7"
+                      >
+                        <ul
+                          class="secondMenu w-full text-sm [&>*]:text-[#6A6A6A] [&>*]:hover:text-[#FE5F55]"
+                        >
+                          <li>
+                            <a
+                              class="flex justify-between items-center h-full pb-[30px] group"
+                              href="#"
+                            >
+                              لوازم جانبی مبایل و کامپیوتر
+                              <svg
+                                class="w-4 h-4 fill-[#6A6A6A] group-hover:fill-[#FE5F55]"
+                              >
+                                <use xlink:href="#miniDownArrow" />
+                              </svg>
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              class="flex justify-between items-center h-full pb-[30px] group"
+                              href="#"
+                            >
+                              کابل-مدل-رابط
+                              <svg
+                                class="w-4 h-4 fill-[#6A6A6A] group-hover:fill-[#FE5F55]"
+                              >
+                                <use xlink:href="#miniDownArrow" />
+                              </svg>
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              class="flex justify-between items-center h-full pb-[30px] group"
+                              href="#"
+                            >
+                              لوازم تولید محتوا
+                              <svg
+                                class="w-4 h-4 fill-[#6A6A6A] group-hover:fill-[#FE5F55]"
+                              >
+                                <use xlink:href="#miniDownArrow" />
+                              </svg>
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              class="flex justify-between items-center h-full pb-[30px] group"
+                              href="#"
+                            >
+                              لوازم شبکه
+                              <svg
+                                class="w-4 h-4 fill-[#6A6A6A] group-hover:fill-[#FE5F55]"
+                              >
+                                <use xlink:href="#miniDownArrow" />
+                              </svg>
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              class="flex justify-between items-center h-full pb-[30px] group"
+                              href="#"
+                            >
+                              کنسول بازی و لوازم جانبی
+                              <svg
+                                class="w-4 h-4 fill-[#6A6A6A] group-hover:fill-[#FE5F55]"
+                              >
+                                <use xlink:href="#miniDownArrow" />
+                              </svg>
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              class="flex justify-between items-center h-full pb-[30px] group"
+                              href="#"
+                            >
+                              لوازم خانگی و شخص
+                              <svg
+                                class="w-4 h-4 fill-[#6A6A6A] group-hover:fill-[#FE5F55]"
+                              >
+                                <use xlink:href="#miniDownArrow" />
+                              </svg>
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              class="flex justify-between items-center h-full pb-[30px] group"
+                              href="#"
+                            >
+                              برند ها
+                              <svg
+                                class="w-4 h-4 fill-[#6A6A6A] group-hover:fill-[#FE5F55]"
+                              >
+                                <use xlink:href="#miniDownArrow" />
+                              </svg>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="w-full px-2.5 mb-4">
+                        <a
+                          href="#"
+                          class="btn bg-blue-950 rounded-[11px] w-full text-white font-estedadRegular text-xs shadow"
+                          >ورود به باشگاه مشتریان</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <a href="#">
+                  <img
+                    class="w-[58px]"
+                    src="/dastresi/assets/logo-CD0j4bhY.png"
+                    alt="logo icon"
+                  />
+                </a>
+              </div>
+              <!-- left flex box -->
+              <div class="flex items-center gap-5">
+                <svg class="fill-none text-[#666666] w-6 h-6">
+                  <use xlink:href="#searchIcon" />
+                </svg>
+                <a href="#">
+                  <svg class="fill-none text-[#666666] w-6 h-6">
+                    <use xlink:href="#person" />
+                  </svg>
+                </a>
+                <a href="#" class="indicator">
+                  <span
+                    class="indicator-item badge badge-xs rounded-full h-5 bg-[#FE5F55] border-0"
+                    >0</span
+                  >
+                  <svg class="fill-none text-[#666666] w-6 h-6">
+                    <use xlink:href="#shoppingCart" />
+                  </svg>
+                </a>
               </div>
             </section>
           </div>
