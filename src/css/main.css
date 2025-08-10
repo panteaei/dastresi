@@ -1,5 +1,8 @@
 @import "tailwindcss";
-@plugin "daisyui";
+@plugin "daisyui" {
+  exclude: rootscrollgutter, rootcolor;
+}
+
 
 /* Estedad Font Faces */
 
@@ -80,4 +83,15 @@
 
 }
 
+* {
+	scrollbar-width: thin;
+	scrollbar-color: oklch(var(--s)) oklch(var(--p)) ;
+}
 
+::-webkit-scrollbar-track {
+	background: oklch(var(--p));
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: oklch(var(--s));
+}
