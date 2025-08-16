@@ -1,0 +1,29 @@
+{
+  "menu": [
+    { "id": 0, "name": "خانه", "link":"#" , "dropDown": [] },
+    {
+      "id": 1,
+      "name": "لوازم جانبی مبایل و کامپیوتر", "link":"#", "svgName":"#miniDownArrow" ,
+      "dropDown": [
+        { "id": 0, "name": "ماوس و کیبورد و پدموس", "link":"#", "dropDown": [] },
+        { "id": 1, "name": "اسپیکر", "link":"#", "dropDown": [] },
+        {
+          "id": 2,
+          "name": "تجهیزات ذخیره سازی ", "svgName":"#leftArrow" ,"link":"#",
+          "dropDown": [
+            { "id": 0, "name": "فلش مموری", "link":"#" },
+            { "id": 1, "name": "کارت حافظه", "link":"#" },
+            { "id": 2, "name": "هارد اکسترنال", "link":"#" }
+          ]
+        }
+      ]
+    },
+    { "id": 2, "name": "کابل-مبدل-رابط", "link":"#", "svgName":"#miniDownArrow" , "dropDown": [] },
+    { "id": 3, "name": "لوازم تولید محتوا", "link":"#", "svgName":"#miniDownArrow" , "dropDown": [] },
+    { "id": 4, "name": "لوازم شبکه", "link":"#", "svgName":"#miniDownArrow" , "dropDown": [] },
+    { "id": 5, "name": "کنسول بازی و لوازم جانبی", "link":"#", "svgName":"#miniDownArrow" , "dropDown": [] },
+    { "id": 6, "name": "لوازم خانگی و شخصی", "link":"#", "svgName":"#miniDownArrow" , "dropDown": [] },
+    { "id": 7, "name": "برندها", "link":"#", "svgName":"#miniDownArrow" , "dropDown": [] }
+   
+  ]
+}
