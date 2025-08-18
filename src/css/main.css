@@ -1,4 +1,6 @@
 @import "tailwindcss";
+/* --- swiper custom styles --- */
+@import "./mySwiper.css";
 @plugin "daisyui" {
   exclude: rootscrollgutter, rootcolor;
 }
