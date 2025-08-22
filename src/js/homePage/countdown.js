@@ -1,11 +1,14 @@
 // countdown.js
-export function initCountdown() {
+export default function initCountdown() {
   let hoursC = document.querySelector(".myCountdown .hours");
   let minutesC = document.querySelector(".myCountdown .minutes");
   let secondsC = document.querySelector(".myCountdown .seconds");
 
-  let targetMiliSeconds = new Date(2025, 7, 19, 10, 0, 0, 0).getTime();
-
+  let targetMiliSeconds = new Date(2025, 7, 21, 10, 0, 0, 0).getTime();
+// اضافه کردن صفر بع قبل اعداد تک رقمی برای زیبایی 
+  function pad(n) {
+    return n.toString().padStart(2, "0");
+  }
   function updateTime() {
     let todayAllMiliSeconds = new Date().getTime();
     let distance = targetMiliSeconds - todayAllMiliSeconds;
@@ -14,9 +17,9 @@ export function initCountdown() {
       const minutes = Math.floor(distance / 1000 / 60) % 60;
       const seconds = Math.floor(distance / 1000) % 60;
 
-      hoursC.innerHTML = hours;
-      minutesC.innerHTML = minutes;
-      secondsC.innerHTML = seconds;
+      hoursC.innerHTML = pad(hours);
+      minutesC.innerHTML = pad(minutes);
+      secondsC.innerHTML = pad(seconds);
     } else {
       const hours = "00";
       const minutes = "00";
@@ -24,8 +27,9 @@ export function initCountdown() {
       hoursC.innerHTML = hours;
       minutesC.innerHTML = minutes;
       secondsC.innerHTML = seconds;
-      clearInterval(timer); // stop counting
+      clearInterval(updateTime); // stop counting
     }
   }
+  updateTime(); // run once immediately
   setInterval(updateTime, 1000);
 }
