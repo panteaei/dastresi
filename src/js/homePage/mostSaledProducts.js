@@ -1,13 +1,13 @@
-export default function initStockProducts() {
+export default function initMostSaledProducts() {
   async function fetchData() {
-    let stockProducts = [];
+    let mostSaledProducts = [];
 
     try {
-      let data = await fetch("http://localhost:3000/stockProducts");
+      let data = await fetch("http://localhost:3000/mostSaledProducts");
       let res = await data.json();
       console.log(res);
 
-      stockProducts = res.map((item) => {
+      mostSaledProducts = res.map((item) => {
         // رنگ‌ها
         let colorCircles = "";
         if (item.colors && item.colors.length > 0) {
@@ -68,7 +68,7 @@ export default function initStockProducts() {
           </div>`;
       });
 
-      document.querySelector(".stockProducts").innerHTML = stockProducts.join("");
+      document.querySelector(".mostSaledProducts").innerHTML = mostSaledProducts.join("");
     } catch (error) {
       console.log(error.message);
     }

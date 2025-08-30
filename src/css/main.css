@@ -84,6 +84,7 @@
 --font-number: "number", sans-serif;
 
 --breakpoint-xs: 30rem; /* 480px > */ 
+--breakpoint-1177: 73.5625rem; /* 1177px > */ 
 
 }
 

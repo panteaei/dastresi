@@ -35,79 +35,212 @@ export default function initSwipers() {
   const swiper2 = new Swiper(".mySwiper2", {
     // configure Swiper to use modules
     modules: [Navigation, Autoplay],
- loop:true,
+    loop: true,
     autoplay: {
       delay: 2500,
       disableOnInteraction: false,
     },
-        breakpoints: {
-          
-        380: {
-          slidesPerView: 2,
-          spaceBetween: 20,
-        },
-           447: {
-          slidesPerView: 3,
-          spaceBetween: 20,
-        },
-              600: {
-          slidesPerView: 4,
-          spaceBetween: 20,
-        },
-        768: {
-          slidesPerView: 4,
-          spaceBetween: 40,
-        },
-           843: {
-          slidesPerView: 5,
-          spaceBetween: 40,
-        },
-        1024: {
-          slidesPerView: 6,
-          spaceBetween: 50,
-        },
+    breakpoints: {
+      380: {
+        slidesPerView: 2,
+        spaceBetween: 20,
       },
+      447: {
+        slidesPerView: 3,
+        spaceBetween: 20,
+      },
+      600: {
+        slidesPerView: 4,
+        spaceBetween: 20,
+      },
+      768: {
+        slidesPerView: 4,
+        spaceBetween: 40,
+      },
+      843: {
+        slidesPerView: 5,
+        spaceBetween: 40,
+      },
+      1024: {
+        slidesPerView: 6,
+        spaceBetween: 50,
+      },
+    },
     navigation: {
       nextEl: ".swiper-favorites-button-next",
       prevEl: ".swiper-favorites-button-prev",
     },
   });
-    // init Swiper stock homePage:
+  // init Swiper stock homePage:
   const swiper3 = new Swiper(".mySwiper3", {
     // configure Swiper to use modules
     modules: [Navigation, Autoplay],
- loop:true,
-    // autoplay: {
-    //   delay: 2500,
-    //   disableOnInteraction: false,
-    // },
-        breakpoints: {
-          
-             380: {
-          slidesPerView: 2,
-          spaceBetween: 20,
-        },
-             472: {
-          slidesPerView: 3,
-          spaceBetween: 20,
-        },
-        776: {
-          slidesPerView: 3,
-          spaceBetween: 48,
-        },
-     
-           891: {
-          slidesPerView: 4,
-          spaceBetween: 40,
-        },
-        1024: {
-          slidesPerView: 4,
-          spaceBetween: 25,
-        },
+    loop: true,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+    breakpoints: {
+      380: {
+        slidesPerView: 2,
+        spaceBetween: 20,
       },
+      472: {
+        slidesPerView: 3,
+        spaceBetween: 20,
+      },
+      776: {
+        slidesPerView: 3,
+        spaceBetween: 48,
+      },
+
+      891: {
+        slidesPerView: 4,
+        spaceBetween: 40,
+      },
+      1024: {
+        slidesPerView: 4,
+        spaceBetween: 25,
+      },
+    },
     navigation: {
       nextEl: ".swiper-stock-button-next",
       prevEl: ".swiper-stock-button-prev",
+    },
+  });
+  // init Swiper most saled homePage:
+  const swiper4 = new Swiper(".mySwiper4", {
+    // configure Swiper to use modules
+    modules: [Navigation, Autoplay],
+    loop: true,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+    breakpoints: {
+      380: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      472: {
+        slidesPerView: 3,
+        spaceBetween: 20,
+      },
+      776: {
+        slidesPerView: 3,
+        spaceBetween: 48,
+      },
+
+      891: {
+        slidesPerView: 4,
+        spaceBetween: 40,
+      },
+      1024: {
+        slidesPerView: 4,
+        spaceBetween: 25,
+      },
+    },
+    navigation: {
+      nextEl: ".swiper-mostSaled-button-next",
+      prevEl: ".swiper-mostSaled-button-prev",
+    },
+  });
+  // init Swiper brands homePage:
+  const swiper5 = new Swiper(".mySwiper5", {
+    // configure Swiper to use modules
+    modules: [Navigation, Autoplay],
+    loop: true,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+    breakpoints: {
+      380: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+
+      408: {
+        slidesPerView: 3,
+        spaceBetween: 20,
+      },
+      557: {
+        slidesPerView: 4,
+        spaceBetween: 20,
+      },
+      776: {
+        slidesPerView: 4,
+        spaceBetween: 48,
+      },
+
+      891: {
+        slidesPerView: 5,
+        spaceBetween: 40,
+      },
+      1024: {
+        slidesPerView: 6,
+        spaceBetween: 25,
+      },
+    },
+    navigation: {
+      nextEl: ".swiper-brands-button-next",
+      prevEl: ".swiper-brands-button-prev",
+    },
+  });
+  // init Swiper article homePage:
+  const swiper6 = new Swiper(".mySwiper6", {
+    // configure Swiper to use modules
+    modules: [Pagination, Autoplay, Navigation],
+    // loop:true,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+    breakpoints: {
+      380: {
+        slidesPerView: 2.5,
+        spaceBetween: 10,
+       loop:true,
+      },
+      640: {
+        slidesPerView: 4,
+        spaceBetween: 10,
+         loop:true,
+      },
+      960: {
+        slidesPerView: 4,
+        spaceBetween: 10,
+        loop:true,
+      },
+      1177: {
+        slidesPerView: 4,
+        spaceBetween: 4,
+         loop:true,
+      },
+      1195: {
+        slidesPerView: 4,
+        spaceBetween: 10,
+         loop:true,
+      },
+      1222: {
+        slidesPerView: 4,
+        spaceBetween: 20,
+         loop:true,
+      },
+      1280: {
+        slidesPerView: 4,
+        spaceBetween: 0,
+        loop:false,
+      },
+      1600: {
+        slidesPerView: 4,
+        spaceBetween: 0,
+      },
+    },
+  
+        navigation: {
+      nextEl: ".swiper-articles-button-next",
+      prevEl: ".swiper-articles-button-prev",
     },
   });
 }
