@@ -3,10 +3,11 @@ export default function initArticles() {
     let articles = [];
 
     try {
-      let data = await fetch("http://localhost:3000/articles");
+      let data = await fetch("https://panteaei.github.io/jsonDastresi/db.json");
       let res = await data.json();
-      console.log(res);
-      articles = res.map((item) => {
+      let articleData = await res.articles;
+      console.log(articleData);
+      articles = articleData.map((item) => {
         return `     <!-- card ${item.id}  -->
                   <div class="swiper-slide !bg-transparent sm:!flex sm:!justify-center 1177:!block  ">
                     <a class="shadow bg-white rounded-[11px] flex flex-col overflow-hidden gap-2 xl:w-[278px] 1177:w-[250px] lg:w-[86%] md:w-[70%] sm:w-[80%]   my-0.5 " href="${item.link}">

@@ -2,10 +2,11 @@ export default function discountProductsData() {
   async function fetchData() {
     let discountProducts = [];
     try {
-      let data = await fetch("http://localhost:3000/discountProducts");
+      let data = await fetch("https://panteaei.github.io/jsonDastresi/db.json");
       let res = await data.json();
-      console.log(res);
-      discountProducts = res.map((item) => {
+      let discountProductsData = await res.discountProducts;
+      console.log(discountProductsData);
+      discountProducts = discountProductsData.map((item) => {
         if (item.id < 2) {
           return `      <!-- item ${item.id}  -->
               <a

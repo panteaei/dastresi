@@ -3,11 +3,12 @@ export default function initMostSaledProducts() {
     let mostSaledProducts = [];
 
     try {
-      let data = await fetch("http://localhost:3000/mostSaledProducts");
+      let data = await fetch("https://panteaei.github.io/jsonDastresi/db.json");
       let res = await data.json();
-      console.log(res);
+      let mostSaledProductsData = await res.mostSaledProducts;
+      console.log(mostSaledProductsData);
 
-      mostSaledProducts = res.map((item) => {
+      mostSaledProducts = mostSaledProductsData.map((item) => {
         // رنگ‌ها
         let colorCircles = "";
         if (item.colors && item.colors.length > 0) {
@@ -53,7 +54,9 @@ export default function initMostSaledProducts() {
                 }
               </div>
 
-              <div class="flex flex-row items-center md:justify-end justify-center py-5 px-2 md:px-4 bg-white ${!item.available ? "hidden" : ""}">
+              <div class="flex flex-row items-center md:justify-end justify-center py-5 px-2 md:px-4 bg-white ${
+                !item.available ? "hidden" : ""
+              }">
                 <span class="text-blue-900 font-number font-bold text-lg">
                   ${item.offerPrice || item.price}
                 </span>
@@ -61,14 +64,17 @@ export default function initMostSaledProducts() {
               </div>
 
               <!-- وضعیت موجودی -->
-              <div class="border-gray-100 border-t bg-red-100 text-red-800 text-sm rounded-b-xl py-6 ${item.available ? "hidden" : ""}">
+              <div class="border-gray-100 border-t bg-red-100 text-red-800 text-sm rounded-b-xl py-6 ${
+                item.available ? "hidden" : ""
+              }">
                 <span>ناموجود</span>
               </div>
             </a>
           </div>`;
       });
 
-      document.querySelector(".mostSaledProducts").innerHTML = mostSaledProducts.join("");
+      document.querySelector(".mostSaledProducts").innerHTML =
+        mostSaledProducts.join("");
     } catch (error) {
       console.log(error.message);
     }

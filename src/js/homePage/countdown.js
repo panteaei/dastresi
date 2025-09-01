@@ -4,7 +4,7 @@ export default function initCountdown() {
   let minutesC = document.querySelector(".myCountdown .minutes");
   let secondsC = document.querySelector(".myCountdown .seconds");
 
-  let targetMiliSeconds = new Date(2025, 7, 21, 10, 0, 0, 0).getTime();
+  let targetMiliSeconds = new Date(2025, 9, 2, 10, 0, 0, 0).getTime();
 // اضافه کردن صفر بع قبل اعداد تک رقمی برای زیبایی 
   function pad(n) {
     return n.toString().padStart(2, "0");

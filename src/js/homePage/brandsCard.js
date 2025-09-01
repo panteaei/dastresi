@@ -3,10 +3,12 @@ export default function initBrandsCards() {
     let brandsCards = [];
 
     try {
-      let data = await fetch("http://localhost:3000/brandsCards");
+      let data = await fetch("https://panteaei.github.io/jsonDastresi/db.json");
       let res = await data.json();
-      console.log(res);
-      brandsCards = res.map((item) => {
+      let brandsCardsData = await res.brandsCards;
+      console.log(brandsCardsData);
+
+      brandsCards = brandsCardsData.map((item) => {
         return `     <!-- card ${item.id}  -->
                   <div class="swiper-slide !bg-transparent">
                     <a href="${item.link}" class="my-4 p-2 flex justify-center items-center bg-white shadow rounded-[11px] translate-0 hover:-translate-y-2 transition-transform">

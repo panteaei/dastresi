@@ -3,11 +3,12 @@ export default function initStockProducts() {
     let stockProducts = [];
 
     try {
-      let data = await fetch("http://localhost:3000/stockProducts");
+      let data = await fetch("https://panteaei.github.io/jsonDastresi/db.json");
       let res = await data.json();
-      console.log(res);
+      let stockProductsData = await res.stockProducts;
+      console.log(stockProductsData);
 
-      stockProducts = res.map((item) => {
+      stockProducts = stockProductsData.map((item) => {
         // رنگ‌ها
         let colorCircles = "";
         if (item.colors && item.colors.length > 0) {
@@ -53,7 +54,9 @@ export default function initStockProducts() {
                 }
               </div>
 
-              <div class="flex flex-row items-center md:justify-end justify-center py-5 px-2 md:px-4 bg-white ${!item.available ? "hidden" : ""}">
+              <div class="flex flex-row items-center md:justify-end justify-center py-5 px-2 md:px-4 bg-white ${
+                !item.available ? "hidden" : ""
+              }">
                 <span class="text-blue-900 font-number font-bold text-lg">
                   ${item.offerPrice || item.price}
                 </span>
@@ -61,14 +64,17 @@ export default function initStockProducts() {
               </div>
 
               <!-- وضعیت موجودی -->
-              <div class="border-gray-100 border-t bg-red-100 text-red-800 text-sm rounded-b-xl py-6 ${item.available ? "hidden" : ""}">
+              <div class="border-gray-100 border-t bg-red-100 text-red-800 text-sm rounded-b-xl py-6 ${
+                item.available ? "hidden" : ""
+              }">
                 <span>ناموجود</span>
               </div>
             </a>
           </div>`;
       });
 
-      document.querySelector(".stockProducts").innerHTML = stockProducts.join("");
+      document.querySelector(".stockProducts").innerHTML =
+        stockProducts.join("");
     } catch (error) {
       console.log(error.message);
     }

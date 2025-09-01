@@ -3,11 +3,12 @@ export default function bannerData() {
     let bannerImages = [];
 
     try {
-      let data = await fetch("http://localhost:3000/banner");
+      let data = await fetch("https://panteaei.github.io/jsonDastresi/db.json");
       let res = await data.json();
-      console.log(res);
+      let bannerData = await res.banner;
+      console.log(bannerData);
 
-      bannerImages = res.map((item) => {
+      bannerImages = bannerData.map((item) => {
         return `     <!-- Slide ${item.id} -->
                 <div class="swiper-slide h-full">
                   <a href="#" class="block w-full h-full">
