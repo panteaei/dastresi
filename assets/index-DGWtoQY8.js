@@ -326,16 +326,16 @@
                       />
                      
                     </a>
-                  </div>`),document.querySelector(".brandsCards").innerHTML=e.join("")}catch(t){console.log(t.message)}}s()}function cs(){async function s(){let e=[];try{let i=await(await fetch("http://localhost:3000/articles")).json();console.log(i),e=i.map(r=>`     <!-- card ${r.id}  -->
+                  </div>`),document.querySelector(".brandsCards").innerHTML=e.join("")}catch(t){console.log(t.message)}}s()}function cs(){async function s(){let e=[];try{let r=await(await(await fetch("https://panteaei.github.io/jsonDastresi/db.json")).json()).articles;console.log(r),e=r.map(n=>`     <!-- card ${n.id}  -->
                   <div class="swiper-slide !bg-transparent sm:!flex sm:!justify-center 1177:!block  ">
-                    <a class="shadow bg-white rounded-[11px] flex flex-col overflow-hidden gap-2 xl:w-[278px] 1177:w-[250px] lg:w-[86%] md:w-[70%] sm:w-[80%]   my-0.5 " href="${r.link}">
+                    <a class="shadow bg-white rounded-[11px] flex flex-col overflow-hidden gap-2 xl:w-[278px] 1177:w-[250px] lg:w-[86%] md:w-[70%] sm:w-[80%]   my-0.5 " href="${n.link}">
                       <img
                       class="rounded-b-lg"
-                        src="${r.imgUrl}"
-                        alt="${r.alt}"
+                        src="${n.imgUrl}"
+                        alt="${n.alt}"
                       />
                       <span class="leading-7 text-xs md:text-sm h-16 px-4 text-black text-center line-clamp-2 hover:text-blue-800 transition-colors"
-                        >${r.title}
+                        >${n.title}
                         </span
                       >
                     </a>
