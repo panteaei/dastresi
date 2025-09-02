@@ -4,11 +4,12 @@ export default function menu() {
     let menuMobile = [];
 
     try {
-      let data = await fetch("http://localhost:3000/menu");
+      let data = await fetch("https://panteaei.github.io/jsonDastresi/db.json");
       let res = await data.json();
-      console.log(res);
+      let menuData = res.menu;
+      console.log(menuData);
       // menu data for the desktop
-      menuDesktop = res.map((item) => {
+      menuDesktop = menuData.map((item) => {
         if (item.id == 0) {
           return `     <li class="">
                     <a
@@ -91,7 +92,7 @@ export default function menu() {
       });
       // menu data for the mobile
 
-      menuMobile = res.map((itemM) => {
+      menuMobile = menuData.map((itemM) => {
         if (itemM.id > 0) {
           return `        <li tabindex="0" class="collapse w-full">
           <input type="checkbox" />

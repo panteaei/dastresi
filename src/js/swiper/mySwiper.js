@@ -35,7 +35,7 @@ export default function initSwipers() {
   const swiper2 = new Swiper(".mySwiper2", {
     // configure Swiper to use modules
     modules: [Navigation, Autoplay],
-    loop: true,
+    
     autoplay: {
       delay: 2500,
       disableOnInteraction: false,
@@ -44,6 +44,7 @@ export default function initSwipers() {
       380: {
         slidesPerView: 2,
         spaceBetween: 20,
+        loop: true,
       },
       447: {
         slidesPerView: 3,
@@ -60,6 +61,7 @@ export default function initSwipers() {
       843: {
         slidesPerView: 5,
         spaceBetween: 40,
+        loop:false,
       },
       1024: {
         slidesPerView: 6,
@@ -75,7 +77,7 @@ export default function initSwipers() {
   const swiper3 = new Swiper(".mySwiper3", {
     // configure Swiper to use modules
     modules: [Navigation, Autoplay],
-    loop: true,
+   
     autoplay: {
       delay: 2500,
       disableOnInteraction: false,
@@ -84,6 +86,7 @@ export default function initSwipers() {
       380: {
         slidesPerView: 2,
         spaceBetween: 20,
+         loop: true,
       },
       472: {
         slidesPerView: 3,
@@ -97,6 +100,7 @@ export default function initSwipers() {
       891: {
         slidesPerView: 4,
         spaceBetween: 40,
+        loop:false,
       },
       1024: {
         slidesPerView: 4,
@@ -112,7 +116,7 @@ export default function initSwipers() {
   const swiper4 = new Swiper(".mySwiper4", {
     // configure Swiper to use modules
     modules: [Navigation, Autoplay],
-    loop: true,
+    
     autoplay: {
       delay: 2500,
       disableOnInteraction: false,
@@ -121,6 +125,7 @@ export default function initSwipers() {
       380: {
         slidesPerView: 2,
         spaceBetween: 20,
+        loop: true,
       },
       472: {
         slidesPerView: 3,
@@ -134,6 +139,7 @@ export default function initSwipers() {
       891: {
         slidesPerView: 4,
         spaceBetween: 40,
+        loop:false,
       },
       1024: {
         slidesPerView: 4,
@@ -149,7 +155,7 @@ export default function initSwipers() {
   const swiper5 = new Swiper(".mySwiper5", {
     // configure Swiper to use modules
     modules: [Navigation, Autoplay],
-    loop: true,
+    
     autoplay: {
       delay: 2500,
       disableOnInteraction: false,
@@ -158,6 +164,7 @@ export default function initSwipers() {
       380: {
         slidesPerView: 2,
         spaceBetween: 20,
+        loop: true,
       },
 
       408: {
@@ -171,6 +178,7 @@ export default function initSwipers() {
       776: {
         slidesPerView: 4,
         spaceBetween: 48,
+        loop:false,
       },
 
       891: {
@@ -191,11 +199,11 @@ export default function initSwipers() {
   const swiper6 = new Swiper(".mySwiper6", {
     // configure Swiper to use modules
     modules: [Pagination, Autoplay, Navigation],
-    // loop:true,
-    autoplay: {
-      delay: 2500,
-      disableOnInteraction: false,
-    },
+   
+    // autoplay: {
+    //   delay: 2500,
+    //   disableOnInteraction: false,
+    // },
     breakpoints: {
       380: {
         slidesPerView: 2.5,
@@ -205,27 +213,27 @@ export default function initSwipers() {
       640: {
         slidesPerView: 4,
         spaceBetween: 10,
-         loop:true,
+        
       },
       960: {
         slidesPerView: 4,
         spaceBetween: 10,
-        loop:true,
+        
       },
       1177: {
         slidesPerView: 4,
         spaceBetween: 4,
-         loop:true,
+        
       },
       1195: {
         slidesPerView: 4,
         spaceBetween: 10,
-         loop:true,
+         
       },
       1222: {
         slidesPerView: 4,
         spaceBetween: 20,
-         loop:true,
+        
       },
       1280: {
         slidesPerView: 4,
@@ -235,6 +243,7 @@ export default function initSwipers() {
       1600: {
         slidesPerView: 4,
         spaceBetween: 0,
+         
       },
     },
   
