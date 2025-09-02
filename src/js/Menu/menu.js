@@ -190,13 +190,14 @@ export default function menu() {
                           </li>`;
         }
       });
+
+      document.querySelector(".secondMenuDesktop").innerHTML =
+        menuDesktop.join("");
+      document.querySelector(".secondMenuMobile").innerHTML =
+        menuMobile.join("");
     } catch (error) {
       console.log(error.message);
     }
-    document.querySelector(".secondMenuDesktop").innerHTML =
-      menuDesktop.join("");
-    document.querySelector(".secondMenuMobile").innerHTML =
-      menuMobile.join("");
   }
   fetchData();
 }
