@@ -1,15 +1,14 @@
-import menu from "./Menu/menu";
-import bannerData from "./homePage/banner";
-import initCountdown from "./homePage/countdown";
-import discountProductsData from "./homePage/discountProducts";
-import initFavoriteProducts from "./homePage/favoriteProducts";
-import initMostSaledProducts from "./homePage/mostSaledProducts";
-import initStockProducts from "./homePage/stockProducts";
-import initSwipers from "./swiper/mySwiper";
-import initBrandsCards from "./homePage/brandsCard";
-import initArticles from "./homePage/articles";
-import initScrollToTop from "./scrollToTop";
-
+import menu from "./Menu/menu.js";
+import bannerData from "./homePage/banner.js";
+import initCountdown from "./homePage/countdown.js";
+import discountProductsData from "./homePage/discountProducts.js";
+import initFavoriteProducts from "./homePage/favoriteProducts.js";
+import initMostSaledProducts from "./homePage/mostSaledProducts.js";
+import initStockProducts from "./homePage/stockProducts.js";
+import initSwipers from "./swiper/mySwiper.js";
+import initBrandsCards from "./homePage/brandsCard.js";
+import initArticles from "./homePage/articles.js";
+import initScrollToTop from "./scrollToTop.js";
 
 // Wait for FULL page load (including images/styles)
 window.addEventListener("load", () => {
@@ -23,6 +22,5 @@ window.addEventListener("load", () => {
   initMostSaledProducts();
   initBrandsCards();
   initArticles();
- initScrollToTop();
-
+  initScrollToTop();
 });
