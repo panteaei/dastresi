@@ -200,10 +200,10 @@ export default function initSwipers() {
     // configure Swiper to use modules
     modules: [Pagination, Autoplay, Navigation],
    
-    // autoplay: {
-    //   delay: 2500,
-    //   disableOnInteraction: false,
-    // },
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
     breakpoints: {
       380: {
         slidesPerView: 2,
@@ -220,11 +220,7 @@ export default function initSwipers() {
         spaceBetween: 10,
         
       },
-      1177: {
-        slidesPerView: 4,
-        spaceBetween: 4,
-        
-      },
+    
       1195: {
         slidesPerView: 4,
         spaceBetween: 10,
@@ -238,11 +234,11 @@ export default function initSwipers() {
       1280: {
         slidesPerView: 4,
         spaceBetween: 20,
-        loop:false,
+        
       },
       1600: {
         slidesPerView: 4,
-        spaceBetween: 0,
+        spaceBetween: 20,
          
       },
     },
