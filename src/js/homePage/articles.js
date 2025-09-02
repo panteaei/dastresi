@@ -9,8 +9,8 @@ export default function initArticles() {
       console.log(articleData);
       articles = articleData.map((item) => {
         return `     <!-- card ${item.id}  -->
-                  <div class="swiper-slide !bg-transparent sm:!flex sm:!justify-center 1177:!block  ">
-                    <a class="shadow bg-white rounded-[11px] flex flex-col overflow-hidden gap-2 xl:w-[278px] 1177:w-[250px] lg:w-[86%] md:w-[70%] sm:w-[80%] my-0.5 " href="${item.link}">
+                  <div class="swiper-slide !bg-transparent  ">
+                    <a class="shadow bg-white rounded-[11px] flex flex-col overflow-hidden gap-2 xl:w-[278px] my-0.5" href="${item.link}">
                       <img
                       class="rounded-b-lg"
                         src="${item.imgUrl}"
@@ -23,7 +23,7 @@ export default function initArticles() {
                     </a>
                   </div>`;
       });
-      document.querySelector(".articleCards").innerHTML = articles;
+      document.querySelector(".articleCards").innerHTML = articles.join("");
     } catch (error) {
       console.log(error.message);
     }

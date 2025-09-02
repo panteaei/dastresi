@@ -206,7 +206,7 @@ export default function initSwipers() {
     // },
     breakpoints: {
       380: {
-        slidesPerView: 2.5,
+        slidesPerView: 2,
         spaceBetween: 10,
        loop:true,
       },
@@ -237,7 +237,7 @@ export default function initSwipers() {
       },
       1280: {
         slidesPerView: 4,
-        spaceBetween: 0,
+        spaceBetween: 20,
         loop:false,
       },
       1600: {

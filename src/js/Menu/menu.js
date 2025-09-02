@@ -194,9 +194,9 @@ export default function menu() {
       console.log(error.message);
     }
     document.querySelector(".secondMenuDesktop").innerHTML =
-      menuDesktop.join(" ");
+      menuDesktop.join("");
     document.querySelector(".secondMenuMobile").innerHTML =
-      menuMobile.join(" ");
+      menuMobile.join("");
   }
   fetchData();
 }
