@@ -469,7 +469,7 @@
     {
       "id": 8,
       "link": "#",
-      "imgUrl": "./public/images/mainHomePage/section5/JUMP-GREEN-11.jpg",
+      "imgUrl": "./images/mainHomePage/section5/JUMP-GREEN-11.jpg",
       "alt": " گجت های جذاب",
       "title": "انواع گجت های جذاب",
       "about": " جامپ استاتر و پمپ باد گرین مدل Gre...",
@@ -539,7 +539,7 @@
     {
       "id": 2,
       "link": "#",
-      "imgUrl": "./public/images/mainHomePage/section6/camelion.jpg",
+      "imgUrl": "./images/mainHomePage/section6/camelion.jpg",
       "alt": "camelion"
     },
     {
@@ -578,7 +578,7 @@
     {
       "id": 1,
       "link": "#",
-      "imgUrl": "./public/images/mainHomePage/section7/wireless-charging-vs-charger-dastresiArtboard 1.jpg",
+      "imgUrl": "./images/mainHomePage/section7/wireless-charging-vs-charger-dastresiArtboard 1.jpg",
       "alt": "شارژر آیفون",
       "title": "شارژ بی‌ سیم در برابر شارژ با کابل: کدام یک برای آیفون ..."
     },
